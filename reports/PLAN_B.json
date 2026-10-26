@@ -1,0 +1,142 @@
+[
+  {
+    "dataset": "bail",
+    "metric": "auc",
+    "graph_vs_mlp": {
+      "n": 5,
+      "mean_delta": -0.060792,
+      "median_delta": -0.064762,
+      "positive": 0,
+      "differences": [
+        -0.065569,
+        -0.068761,
+        -0.060253,
+        -0.064762,
+        -0.044613
+      ]
+    },
+    "graph_vs_rewired": {
+      "n": 5,
+      "mean_delta": 0.273552,
+      "median_delta": 0.28242,
+      "positive": 5,
+      "differences": [
+        0.28242,
+        0.278022,
+        0.203744,
+        0.299996,
+        0.303579
+      ]
+    },
+    "graph_status": "INCOMPLETE_OR_MIXED",
+    "mask_comparisons": {
+      "0.5": {
+        "vs_random": {
+          "n": 5,
+          "mean_delta": 0.031456,
+          "median_delta": 0.032409,
+          "positive": 5,
+          "differences": [
+            0.032971,
+            0.032438,
+            0.029626,
+            0.032409,
+            0.029833
+          ]
+        },
+        "vs_degree": {
+          "n": 5,
+          "mean_delta": 0.040438,
+          "median_delta": 0.040572,
+          "positive": 5,
+          "differences": [
+            0.038504,
+            0.043258,
+            0.036877,
+            0.042981,
+            0.040572
+          ]
+        }
+      }
+    },
+    "mask_status_by_budget": {
+      "0.5": "SUPPORTED_PRELIMINARY"
+    },
+    "fairness_delta_A3_minus_A2": null,
+    "utility_delta_A3_minus_A2": null,
+    "fairness_status": "INCOMPLETE",
+    "robustness_drift_delta_A4_minus_A3": null,
+    "robustness_status": "INCOMPLETE",
+    "plan_b": "INCOMPLETE/MIXED: do not claim success or total failure. Finish missing checkpoints/controls, then investigate whichever gate fails."
+  },
+  {
+    "dataset": "credit",
+    "metric": "auc",
+    "graph_vs_mlp": {
+      "n": 5,
+      "mean_delta": 0.060398,
+      "median_delta": 0.075039,
+      "positive": 4,
+      "differences": [
+        0.068763,
+        -0.010002,
+        0.086057,
+        0.075039,
+        0.082135
+      ]
+    },
+    "graph_vs_rewired": {
+      "n": 5,
+      "mean_delta": 0.134198,
+      "median_delta": 0.141634,
+      "positive": 5,
+      "differences": [
+        0.161228,
+        0.091892,
+        0.145082,
+        0.131155,
+        0.141634
+      ]
+    },
+    "graph_status": "SUPPORTED_PRELIMINARY",
+    "mask_comparisons": {
+      "0.5": {
+        "vs_random": {
+          "n": 5,
+          "mean_delta": -0.003405,
+          "median_delta": -0.002131,
+          "positive": 0,
+          "differences": [
+            -0.001894,
+            -0.005969,
+            -0.005715,
+            -0.002131,
+            -0.001317
+          ]
+        },
+        "vs_degree": {
+          "n": 5,
+          "mean_delta": 0.046135,
+          "median_delta": 0.059461,
+          "positive": 5,
+          "differences": [
+            0.064064,
+            0.02763,
+            0.059461,
+            0.008015,
+            0.071506
+          ]
+        }
+      }
+    },
+    "mask_status_by_budget": {
+      "0.5": "INCOMPLETE_OR_MIXED"
+    },
+    "fairness_delta_A3_minus_A2": null,
+    "utility_delta_A3_minus_A2": null,
+    "fairness_status": "INCOMPLETE",
+    "robustness_drift_delta_A4_minus_A3": null,
+    "robustness_status": "INCOMPLETE",
+    "plan_b": "INCOMPLETE/MIXED: do not claim success or total failure. Finish missing checkpoints/controls, then investigate whichever gate fails."
+  }
+]
